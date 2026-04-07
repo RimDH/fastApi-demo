@@ -1,20 +1,7 @@
-# FastAPI framework
 fastapi==0.111.1
-
-# ASGI server to run FastAPI
 uvicorn[standard]==0.23.2
-
-# Async MongoDB driver
-motor==4.3.0
-
-# Load environment variables from .env files
+motor==3.7.1
 python-dotenv==1.0.1
-
-# Pydantic for data validation
 pydantic==2.12.1
-
-# Pydantic settings (v2+)
-pydantic-settings==1.10.1
-
-# Email validation for EmailStr
+pydantic-settings==2.2.1
 email-validator==2.3.0
