@@ -1,6 +1,6 @@
 # 🚀 FastAPI & MongoDB Async Boilerplate
 
-A professional-grade starter template for building scalable, asynchronous REST APIs using **FastAPI** and **MongoDB**. This project follows industry-standard patterns for clean architecture and type safety.
+A professional-grade starter template for building scalable, asynchronous REST APIs using **FastAPI** and **MongoDB**. 
 
 ---
 
@@ -18,17 +18,16 @@ A professional-grade starter template for building scalable, asynchronous REST A
 
 ## ✨ Key Features
 
-* **Full CRUD Integration:** Pre-configured Create, Read, Update, and Delete operations.
-* **Asynchronous Architecture:** Fully non-blocking database I/O using `Motor`.
-* **Robust Validation:** Strict schema enforcement using Pydantic models.
-* **Decoupled Logic:** Organized folder structure separating routes, business logic, and configuration.
-* **Auto-Docs:** Instant Swagger UI (`/docs`) and ReDoc (`/redoc`) integration.
+* **Full CRUD Integration** – Pre-configured Create, Read, Update, and Delete operations.
+* **Asynchronous Architecture** – Fully non-blocking database I/O using `Motor`.
+* **Robust Validation** – Strict schema enforcement using Pydantic models.
+* **Scalable Structure** – Organized folder structure separating routes and business logic.
+* **Auto-Docs** – Instant Swagger UI (/docs) and ReDoc (/redoc) integration.
 
 ---
 
 ## 📂 Project Structure
 
-```text
 fastapi-demo/
 ├── app/
 │   ├── core/           # Configuration and global settings
@@ -41,30 +40,49 @@ fastapi-demo/
 ├── .gitignore          # Git exclusion rules
 ├── requirements.txt    # Dependency manifest
 └── README.md           # Documentation
-⚙️ Getting Started
-1. Clone & Navigate
-Bash
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone & Navigate
 git clone <repo-url>
 cd fastapi-demo
-2. Environment Setup
+
+### 2. Environment Setup
 Create a virtual environment and install dependencies:
 
-Bash
+# Create the environment
 python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Activate it (Linux/macOS)
+source venv/bin/activate  
+
+# Activate it (Windows)
+# venv\Scripts\activate
+
+# Install requirements
 pip install -r requirements.txt
-3. Configuration
+
+### 3. Configuration
 Create a .env file in the root directory and add your credentials:
 
-Code snippet
 MONGO_URI=mongodb://localhost:27017
 DB_NAME=fastapi_demo
-🚀 Running the Application
-Development
+
+---
+
+## 🚀 Running the Application
+
+### Development
 Launch the server with Hot-Reload enabled:
 
-Bash
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-API Base URL: http://localhost:8000
 
-Interactive Docs: http://localhost:8000/docs
+* API Base URL: http://localhost:8000
+* Interactive Docs: http://localhost:8000/docs
+
+---
+
+## 🛡 License
+This project is open-source and available under the MIT License.
