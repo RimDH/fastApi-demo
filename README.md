@@ -1,44 +1,70 @@
-# FastAPI CRUD Demo
+# 🚀 FastAPI & MongoDB Async Boilerplate
 
-A simple CRUD application using **FastAPI** and **MongoDB**, following clean code and maintainable structure.
-
----
-
-## Features
-
-- Create, Read, Update, Delete (CRUD) operations for users
-- Async MongoDB integration with **Motor**
-- Environment variable support using **python-dotenv**
-- Input validation with **Pydantic**
-- Clean code for scalability and maintainability
+A professional-grade starter template for building scalable, asynchronous REST APIs using **FastAPI** and **MongoDB**. This project follows industry-standard patterns for clean architecture and type safety.
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
-- **FastAPI** – Web framework
-- **Uvicorn** – ASGI server
-- **MongoDB + Motor** – Async database
-- **Pydantic + Pydantic-Settings** – Data validation and settings
-- **Python-Dotenv** – Environment variables
+| Technology | Purpose |
+| :--- | :--- |
+| **FastAPI** | High-performance Python web framework |
+| **Motor** | Non-blocking MongoDB driver for asyncio |
+| **Pydantic** | Data validation and settings management |
+| **Uvicorn** | Lightning-fast ASGI server implementation |
+| **Python-Dotenv** | Secure environment variable handling |
 
 ---
 
-## Setup
+## ✨ Key Features
 
-1. **Clone the project**
+* **Full CRUD Integration:** Pre-configured Create, Read, Update, and Delete operations.
+* **Asynchronous Architecture:** Fully non-blocking database I/O using `Motor`.
+* **Robust Validation:** Strict schema enforcement using Pydantic models.
+* **Decoupled Logic:** Organized folder structure separating routes, business logic, and configuration.
+* **Auto-Docs:** Instant Swagger UI (`/docs`) and ReDoc (`/redoc`) integration.
 
-```bash
+---
+
+## 📂 Project Structure
+
+```text
+fastapi-demo/
+├── app/
+│   ├── core/           # Configuration and global settings
+│   ├── controllers/    # Business logic & DB queries
+│   ├── routes/         # API endpoint definitions
+│   ├── schemas/        # Pydantic data models
+│   ├── db.py           # Database connection lifecycle
+│   └── main.py         # Application entrypoint
+├── .env                # Environment variables (Private)
+├── .gitignore          # Git exclusion rules
+├── requirements.txt    # Dependency manifest
+└── README.md           # Documentation
+⚙️ Getting Started
+1. Clone & Navigate
+Bash
 git clone <repo-url>
 cd fastapi-demo
-Create a virtual environment
+2. Environment Setup
+Create a virtual environment and install dependencies:
+
+Bash
 python3 -m venv venv
-source venv/bin/activate
-Install dependencies
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
-Set up environment variables
+3. Configuration
+Create a .env file in the root directory and add your credentials:
 
-Create a .env file:
-
+Code snippet
 MONGO_URI=mongodb://localhost:27017
 DB_NAME=fastapi_demo
+🚀 Running the Application
+Development
+Launch the server with Hot-Reload enabled:
+
+Bash
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+API Base URL: http://localhost:8000
+
+Interactive Docs: http://localhost:8000/docs
