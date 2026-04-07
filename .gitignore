@@ -1,0 +1,58 @@
+# -----------------------------
+# Python cache files
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# -----------------------------
+# Virtual environment folders
+# -----------------------------
+venv/
+env/
+.venv/
+
+# -----------------------------
+# IDE / Editor files
+# -----------------------------
+# VSCode
+.vscode/
+
+# JetBrains IDEs (PyCharm, etc)
+.idea/
+
+# -----------------------------
+# OS files
+# -----------------------------
+# macOS
+.DS_Store
+# Linux swap files
+*.swp
+
+# -----------------------------
+# Environment / secrets
+# -----------------------------
+.env
+.env.*   # If you have multiple env files
+
+# -----------------------------
+# Logs & temporary files
+# -----------------------------
+*.log
+logs/
+
+# -----------------------------
+# Python packaging / build files
+# -----------------------------
+build/
+dist/
+*.egg-info/
+
+# -----------------------------
+# Optional: other unwanted files
+# -----------------------------
+*.pytest_cache/
+*.mypy_cache/
+*.coverage
+.coverage.*
+htmlcov/
