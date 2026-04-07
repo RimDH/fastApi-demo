@@ -52,6 +52,7 @@ pip install -r requirements.txt
 Create a .env file in the root directory and add your credentials:
 
 MONGO_URI=mongodb://localhost:27017
+
 DB_NAME=fastapi_demo
 
 ---
@@ -64,6 +65,5 @@ Launch the server with Hot-Reload enabled:
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 * API Base URL: http://localhost:8000
-* Interactive Docs: http://localhost:8000/docs
 
 
