@@ -26,22 +26,6 @@ A professional-grade starter template for building scalable, asynchronous REST A
 
 ---
 
-## 📂 Project Structure
-
-fastapi-demo/
-├── app/
-│   ├── core/           # Configuration and global settings
-│   ├── controllers/    # Business logic & DB queries
-│   ├── routes/         # API endpoint definitions
-│   ├── schemas/        # Pydantic data models
-│   ├── db.py           # Database connection lifecycle
-│   └── main.py         # Application entrypoint
-├── .env                # Environment variables (Private)
-├── .gitignore          # Git exclusion rules
-├── requirements.txt    # Dependency manifest
-└── README.md           # Documentation
-
----
 
 ## ⚙️ Getting Started
 
@@ -52,14 +36,14 @@ cd fastapi-demo
 ### 2. Environment Setup
 Create a virtual environment and install dependencies:
 
-# Create the environment
+## Create the environment
 python3 -m venv venv
 
-# Activate it (Linux/macOS)
+## Activate it (Linux/macOS)
 source venv/bin/activate  
 
-# Activate it (Windows)
-# venv\Scripts\activate
+## Activate it (Windows)
+venv\Scripts\activate
 
 # Install requirements
 pip install -r requirements.txt
@@ -82,7 +66,4 @@ uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 * API Base URL: http://localhost:8000
 * Interactive Docs: http://localhost:8000/docs
 
----
 
-## 🛡 License
-This project is open-source and available under the MIT License.
