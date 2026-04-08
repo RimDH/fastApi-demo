@@ -22,7 +22,6 @@ A professional-grade starter template for building scalable, asynchronous REST A
 * **Asynchronous Architecture** – Fully non-blocking database I/O using `Motor`.
 * **Robust Validation** – Strict schema enforcement using Pydantic models.
 * **Scalable Structure** – Organized folder structure separating routes and business logic.
-* **Auto-Docs** – Instant Swagger UI (/docs) and ReDoc (/redoc) integration.
 
 ---
 
@@ -30,8 +29,8 @@ A professional-grade starter template for building scalable, asynchronous REST A
 ## ⚙️ Getting Started
 
 ### 1. Clone & Navigate
-git clone <repo-url>
-cd fastapi-demo
+git clone git@github.com:RimDH/fastApi-demo.git
+cd fastApi-demo
 
 ### 2. Environment Setup
 Create a virtual environment and install dependencies:
