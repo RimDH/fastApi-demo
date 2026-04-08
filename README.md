@@ -30,6 +30,7 @@ A professional-grade starter template for building scalable, asynchronous REST A
 
 ### 1. Clone & Navigate
 git clone git@github.com:RimDH/fastApi-demo.git
+
 cd fastApi-demo
 
 ### 2. Environment Setup
